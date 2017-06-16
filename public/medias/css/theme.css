@@ -1,0 +1,137 @@
+.cls-overflow-hidden {
+  overflow: hidden;
+}
+.body {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+}
+a:link,
+a:visited {
+  color: #013C53;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+  padding: 14px 0 14px 0;
+}
+i.icon.layout:before {
+  font-size: 14px !important;
+}
+span#zf-name {
+  color: #91BE3F;
+}
+#page,
+footer {
+  width: 40%;
+  margin: auto;
+  border: 1px solid #ccc;
+}
+#page > section,
+footer > section {
+  padding: 0 10px 0 10px;
+}
+header {
+  color: #FFFFFF;
+  width: auto;
+  min-height: 100px;
+  text-align: center;
+  overflow: hidden;
+}
+header .demo-header {
+  background-image: url("../img/bkg_header.jpg");
+}
+header .ui.menu {
+  margin: 0;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  font-size: 14px;
+}
+div#more-information {
+  background-image: url("../img/bkg_body-bottom.gif");
+  height: 100%;
+}
+table {
+  margin: 20px 0 15px 0 !important;
+}
+table th,
+table td {
+  padding: 5px !important;
+}
+table th {
+  cursor: pointer !important;
+}
+table.dataTable.no-footer {
+  border-bottom: 1px solid rgba(34,36,38,0.1) !important;
+}
+footer {
+  margin-top: 15px;
+  border: none;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  display: inline;
+  list-style: none;
+}
+footer ul li::after {
+  content: " | ";
+}
+footer ul li:last-child::after {
+  content: "";
+}
+footer ul li a {
+  text-decoration: none;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+}
+#DataTable_wrapper #dataTables_length,
+#DataTable_wrapper #DataTable_filter {
+  margin-bottom: 10px;
+}
+#DataTable_wrapper #DataTable_info,
+#DataTable_wrapper #DataTable_paginate {
+  margin-bottom: 30px;
+}
+#DataTable_wrapper #DataTable_info .paginate_button:hover,
+#DataTable_wrapper #DataTable_paginate .paginate_button:hover {
+  border: none !important;
+}
+.ui.pagination.menu {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 12px !important;
+}
+.ui.pagination.menu .item {
+  padding: 0.5em 1em !important;
+}
+.ui.pagination.menu .item.active {
+  padding: 0.5em 1em;
+  border: none !important;
+  color: #000000;
+}
+.ui.pagination.menu .item.disabled,
+.ui.pagination.menu .item.disabled:hover {
+  cursor: default;
+  background-color: transparent !important;
+  color: rgba(40,40,40,0.3) !important;
+}
+.ui.grid>.row {
+  padding: 0 !important;
+}
+.ui.grid>.row table {
+  margin-top: 0 !important;
+}
+.ui.selection.dropdown {
+  min-width: 30px !important;
+}

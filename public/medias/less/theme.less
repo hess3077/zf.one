@@ -1,0 +1,154 @@
+@import "variables";
+
+body {
+  .body;
+}
+
+a {
+  &:link, &:visited {color: #013C53;}
+}
+
+h1, h2, h3, h4, h5 {
+  .body;
+  padding: 14px 0 14px 0;
+}
+
+i {
+  &.icon.layout:before {
+    font-size: 14px !important;
+  }
+}
+
+span#zf-name {
+  color: #91BE3F;
+}
+
+#page, footer {
+  width: 40%;
+  margin: auto;
+  border: 1px solid #ccc;
+
+  > section {
+      padding: 0 10px 0 10px;
+  }
+}
+
+header {
+  color: #FFFFFF;
+  width:  auto;
+  min-height: 100px;
+  text-align: center;
+
+  .demo-header {
+    background-image: url("@{images}bkg_header.jpg");
+  }
+
+  .ui {
+    &.menu {
+      margin: 0;
+      border-left: none;
+      border-right: none;
+      border-radius: 0;
+      font-size: 14px;
+    }
+  }
+
+  .cls-overflow-hidden;
+}
+
+div#more-information {
+  background-image: url("@{images}bkg_body-bottom.gif");
+  height: 100%;
+}
+
+table {
+  margin: 20px 0 15px 0 !important;
+
+  th, td {
+    padding: 5px !important;
+  }
+  th {
+    cursor: pointer !important;
+  }
+
+  &.dataTable.no-footer {
+    border-bottom: 1px solid rgba(34,36,38,.1) !important;
+  }
+}
+
+footer {
+  margin-top: 15px;
+  border: none;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline;
+      list-style: none;
+
+      &::after {
+        content: " | ";
+      }
+
+      &:last-child::after {
+        content: "";
+      }
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/*
+ * DATATABLES
+ */
+
+#DataTable_wrapper {
+  #dataTables_length, #DataTable_filter {
+    margin-bottom: 10px;
+  }
+  #DataTable_info, #DataTable_paginate {
+    margin-bottom: 30px;
+
+    .paginate_button:hover {
+      border: none !important;
+    }
+  }
+}
+
+.ui.pagination.menu {
+  .body;
+
+  .item {
+    padding: 0.5em 1em !important;
+    &.active {
+      padding: 0.5em 1em;
+      border: none !important;
+      color: #000000;
+    }
+    &.disabled, &.disabled:hover {
+      cursor: default;
+      background-color: transparent !important;
+      color: rgba(40,40,40,.3) !important;
+    }
+  }
+}
+.ui.grid>.row {
+  padding: 0 !important;
+
+  table {
+    margin-top: 0 !important;;
+  }
+}
+.ui.selection.dropdown {
+  min-width: 30px !important;
+}
+
