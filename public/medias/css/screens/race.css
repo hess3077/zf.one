@@ -1,0 +1,12 @@
+#race td:nth-child(1) {
+  width: 5%;
+}
+#race td:nth-child(2) {
+  width: 20%;
+}
+#race td:nth-child(3) {
+  width: 13%;
+}
+#race td:nth-child(5) {
+  width: 8%;
+}
