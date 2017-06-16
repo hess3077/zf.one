@@ -1,3 +1,4 @@
+{nocache}
 <div id="race">
 	<h2><i class="list layout icon"></i> Liste des Races</h2>
 
@@ -24,3 +25,4 @@
 		</tbody>
 	</table>
 </div>
+{/nocache}
