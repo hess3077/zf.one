@@ -5,15 +5,11 @@
         <h3>Démo ZF</h3>
     </div>
     <div class="ui pointing menu">
-        <a id="menu-home" class="item" href="index">
-            Accueil
-        </a>
-        <a id="menu-passport" class="item" href="passport">
-            Passport
-        </a>
-        <a id="menu-race" class="item" href="race">
-            Race
-        </a>
+        <a id="menu-home" class="item" href="index">Accueil</a>
+        <a id="menu-passport" class="item" href="passport">Passport</a>
+        <a id="menu-race" class="item" href="race">Race</a>
+        <a id="menu-espece" class="item" href="espece">Espèce</a>
+        <a id="menu-animal" class="item" href="animal">Animal</a>
         <div class="right menu">
             <div class="item">
                 <div class="ui transparent icon input">
@@ -31,6 +27,5 @@
 
     $(document).ready(function(){
         $(tab_current).addClass('active');
-        console.log(tab_current);
     });
 </script>
