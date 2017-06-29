@@ -1,0 +1,14 @@
+#animal td:nth-child(1) {
+  width: 5%;
+}
+#animal td:nth-child(2) {
+  width: 7%;
+}
+#animal td:nth-child(6) {
+  width: 9%;
+}
+#animal td:nth-child(7),
+#animal td:nth-child(8),
+#animal td:nth-child(9) {
+  width: 7%;
+}

@@ -28,3 +28,25 @@ The following is a sample VHOST you might want to consider for your project.
    </Directory>
 
 </VirtualHost>
+
+
+Commandes utiles ZF
+=====================
+
+zf create db-table Guestbook guestbook : crée la structure de la table de la BDD
+--------------------------------------
+
+zf create model GuestbookMapper : crée le mapping de la structure de la table
+-------------------------------
+
+zf create model Guestbook : crée le modèle de la table
+-------------------------
+
+zf create controller Guestbook : génération d'un controleur
+------------------------------
+
+# Création d'un Module
+  --------------------
+
+  zf create module Blog
+  zf create controller index -m Blog

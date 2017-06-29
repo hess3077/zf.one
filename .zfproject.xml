@@ -17,6 +17,12 @@
         <controllerFile controllerName="Race">
           <actionMethod actionName="index"/>
         </controllerFile>
+        <controllerFile controllerName="Animal">
+          <actionMethod actionName="index"/>
+        </controllerFile>
+        <controllerFile controllerName="Espece">
+          <actionMethod actionName="index"/>
+        </controllerFile>
       </controllersDirectory>
       <formsDirectory enabled="false"/>
       <layoutsDirectory enabled="false"/>
@@ -24,13 +30,67 @@
         <dbTableDirectory>
           <dbTableFile dbTableName="Passport"/>
           <dbTableFile dbTableName="Race"/>
+          <dbTableFile dbTableName="Espece"/>
+          <dbTableFile dbTableName="Animal"/>
         </dbTableDirectory>
         <modelFile modelName="PassportMapper"/>
         <modelFile modelName="Passport"/>
         <modelFile modelName="RaceMapper"/>
         <modelFile modelName="Race"/>
+        <modelFile modelName="EspeceMapper"/>
+        <modelFile modelName="AnimalMapper"/>
+        <modelFile modelName="Animal"/>
+        <modelFile modelName="Espece"/>
       </modelsDirectory>
-      <modulesDirectory enabled="false"/>
+      <modulesDirectory enabled="false">
+        <moduleDirectory moduleName="webservices">
+          <configsDirectory enabled="false"/>
+          <controllersDirectory>
+            <controllerFile controllerName="Index">
+              <actionMethod actionName="index"/>
+            </controllerFile>
+            <controllerFile controllerName="Passport">
+              <actionMethod actionName="index"/>
+            </controllerFile>
+            <controllerFile controllerName="Animal">
+              <actionMethod actionName="index"/>
+            </controllerFile>
+            <controllerFile controllerName="Espece">
+              <actionMethod actionName="index"/>
+            </controllerFile>
+            <controllerFile controllerName="Race">
+              <actionMethod actionName="index"/>
+            </controllerFile>
+          </controllersDirectory>
+          <formsDirectory enabled="false"/>
+          <layoutsDirectory enabled="false"/>
+          <modelsDirectory>
+            <dbTableDirectory enabled="false"/>
+          </modelsDirectory>
+          <servicesDirectory enabled="false"/>
+          <viewsDirectory>
+            <viewScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Index">
+                <viewScriptFile forActionName="index"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Passport">
+                <viewScriptFile forActionName="index"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Animal">
+                <viewScriptFile forActionName="index"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Espece">
+                <viewScriptFile forActionName="index"/>
+              </viewControllerScriptsDirectory>
+              <viewControllerScriptsDirectory forControllerName="Race">
+                <viewScriptFile forActionName="index"/>
+              </viewControllerScriptsDirectory>
+            </viewScriptsDirectory>
+            <viewHelpersDirectory/>
+            <viewFiltersDirectory/>
+          </viewsDirectory>
+        </moduleDirectory>
+      </modulesDirectory>
       <servicesDirectory enabled="false"/>
       <viewsDirectory>
         <viewScriptsDirectory>
@@ -44,6 +104,12 @@
             <viewScriptFile forActionName="index"/>
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Race">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Animal">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Espece">
             <viewScriptFile forActionName="index"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>

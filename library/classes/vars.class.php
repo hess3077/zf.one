@@ -14,8 +14,8 @@ class Vars {
 		 */
 		
 		$get_datas_format = Pages::getParam_path('datas_format', 'get');
-		
-		$this->datas_format = ($get_datas_format=='json') ? 'json' : 'xml'; // Format des données à retourner
+
+		$this->datas_format = ($get_datas_format=='xml') ? 'xml' : 'json'; // Format des données à retourner
 
         $this->get_ajax = Pages::getParam_path('get_ajax', 'get');
 	}
@@ -187,11 +187,12 @@ class Vars {
 			
 			foreach ($array as $key => $value) {
 				if (is_array($value)) {
+				    $name_primary_node = !empty($controller_action) ? $controller_action : $key;
 					/*
 					 * On insère les données
 					 */
-					$node  = $primary_node->addChild($key);
-					$nodes = $node->getName($key);					
+					$node  = $primary_node->addChild($name_primary_node);
+					$nodes = $node->getName($key);
 					
 					foreach ($value as $us_key=> $us_value){
 						$us_value = (is_object($us_value)==true) ? (Array)$us_value : $us_value;
@@ -224,7 +225,8 @@ class Vars {
 			$output = $_xml->asXML();
 		}
 		
-		return $output;
+		print($output);
+		exit(0);
 	}
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-class Application_Model_RaceMapper
+class Application_Model_AnimalMapper
 {
     protected $_dbTable;
     protected $infoTable;
@@ -29,7 +29,7 @@ class Application_Model_RaceMapper
     public function getDbTable()
     {
         if (null === $this->_dbTable) {
-            $this->setDbTable('Application_Model_DbTable_Race');
+            $this->setDbTable('Application_Model_DbTable_Animal');
         }
         return $this->_dbTable;
     }
@@ -47,15 +47,19 @@ class Application_Model_RaceMapper
 
         foreach ($resultSet as $row) {
             if($format=='Object') {
-                $entry = new Application_Model_Race();
+                $entry = new Application_Model_Animal();
                 $entry->setId($row->id)
-                    ->setNom($row->nom)
-                    ->setEspece_Id($row->espece_id)
-                    ->setDescription($row->description)
-                    ->setPrix($row->prix);
+                      ->setSexe($row->sexe)
+                      ->setDate_Naissance($row->date_naissance)
+                      ->setNom($row->nom)
+                      ->setCommentaires($row->commentaires)
+                      ->setEspece_Id($row->espece_id)
+                      ->setRace_Id($row->race_id)
+                      ->setMere_Id($row->mere_id)
+                      ->setPere_Id($row->pere_id);
                 $entries[] = $entry;
             }
-            else {
+            else{
                 $i++;
 
                 foreach ($this->_colsTable as $key_column=>$name_column)
@@ -65,4 +69,3 @@ class Application_Model_RaceMapper
         return $entries;
     }
 }
-
