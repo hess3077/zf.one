@@ -2,6 +2,11 @@
 
 class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 {
+    public $_instance_vars;
+    public $_instance_pages;
+    public $firephp;
+
+
     protected function _initView()
     {
         // initialize smarty view
@@ -33,7 +38,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         /**
          * Include the LessPHP library from where we saved it.
          */
-        require_once APPLICATION_PATH . "/../library/lessphp/lessc.inc.php";
+        require_once APPLICATION_PATH."/../library/lessphp/lessc.inc.php";
 
         /**
          * Identify the source LESS stylesheet, and the
@@ -41,16 +46,27 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
          */
         $sLess_and_sCss = Files::generated_LESS_to_CSS();
         $sLess = $sLess_and_sCss['less'];
-        $sCss = $sLess_and_sCss['css'];
+        $sCss  = $sLess_and_sCss['css'];
 
         /**
          * Compile the source LESS through lessc() and save
          *  the output CSS into the destination.
          */
-        foreach ($sLess as $key_sLess => $file_sLess) {
+        foreach ($sLess as $key_sLess=>$file_sLess){
             $oLessc = new lessc($file_sLess);
             file_put_contents($sCss[$key_sLess], $oLessc->parse());
         }
     }
-}
 
+    public function _initGlobalPlugin() {
+        $this->bootstrap('frontController');
+
+        require_once 'controllers/GlobalControllerPlugin.php';
+        $plugin = new GlobalControllerPlugin();
+
+        $front = Zend_Controller_Front::getInstance();
+        $front->registerPlugin($plugin);
+
+        return $plugin;
+    }
+}

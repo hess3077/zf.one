@@ -1,5 +1,5 @@
 <header>
-    {assign var='page' value="{substr($this->url(), 1)}"}
+    {assign var='page' value="{substr(str_replace(array('/'), array(''), $this->url()), 1)}"}
 
     <div class="demo-header">
         <h3>Démo ZF</h3>

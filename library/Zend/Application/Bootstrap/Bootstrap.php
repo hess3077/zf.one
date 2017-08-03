@@ -25,8 +25,6 @@
  */
 require_once 'Zend/Application/Bootstrap/BootstrapAbstract.php';
 
-require_once 'FirePHPCore/FirePHP.class.php';
-
 /**
  * Concrete base class for bootstrap classes
  *
@@ -53,8 +51,6 @@ class Zend_Application_Bootstrap_Bootstrap
      * @var Zend_Loader_Autoloader_Resource
      */
     protected $_resourceLoader;
-    
-    public $firephp;
 
     /**
      * Constructor
@@ -81,9 +77,6 @@ class Zend_Application_Bootstrap_Bootstrap
         if (!$this->hasPluginResource('FrontController')) {
             $this->registerPluginResource('FrontController');
         }
-        
-        /** FirePHP */
-        $this->firephp = FirePHP::getInstance(true);
     }
 
     /**

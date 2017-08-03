@@ -2,8 +2,8 @@
 
 class IndexController extends Zend_Controller_Action
 {
-
     private $firephp;
+
 
     public function init()
     {
@@ -18,4 +18,3 @@ class IndexController extends Zend_Controller_Action
         $this->view->message = 'Données en cours de fabrication ...';
     }
 }
-

@@ -1,4 +1,3 @@
-{nocache}
 <div id="passport">
 	<h2><i class="list layout icon"></i> Liste des Agents</h2>
 
@@ -21,4 +20,3 @@
 		</tbody>
 	</table>
 </div>
-{/nocache}

@@ -2,11 +2,11 @@
   overflow: hidden;
 }
 .body {
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
   font-size: 12px !important;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
   font-size: 12px !important;
 }
 a:link,
@@ -18,9 +18,12 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
   font-size: 12px !important;
   padding: 14px 0 14px 0;
+}
+h2 {
+  font-size: 1.21428571rem;
 }
 i.icon.layout:before {
   font-size: 14px !important;
@@ -96,6 +99,16 @@ footer ul li a {
 footer ul li a:hover {
   text-decoration: underline;
 }
+input[type=submit] {
+  background: #4285f4;
+  border: 1px solid #ddd;
+  padding: 8px;
+  color: #fff;
+  border-radius: 5px;
+}
+#submit-element {
+  text-align: right;
+}
 #DataTable_wrapper #dataTables_length,
 #DataTable_wrapper #DataTable_filter {
   margin-bottom: 10px;
@@ -109,7 +122,7 @@ footer ul li a:hover {
   border: none !important;
 }
 .ui.pagination.menu {
-  font-family: Arial, Helvetica, sans-serif !important;
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
   font-size: 12px !important;
 }
 .ui.pagination.menu .item {
@@ -134,4 +147,29 @@ footer ul li a:hover {
 }
 .ui.selection.dropdown {
   min-width: 30px !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 1px solid rgba(34,36,38,0.15) !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+  -webkit-animation-name: autofill !important;
+  -webkit-animation-fill-mode: both !important;
+}
+.ui.input input::-moz-placeholder {
+  color: rgba(115,115,115,0.87);
+}
+.ui.input input:focus::-moz-placeholder {
+  color: initial;
+}
+.ui.input input.border-focus {
+  border-bottom: 2px solid #4285f4 !important;
 }
