@@ -3,6 +3,8 @@ $(document).ready(function() {
         'language': translationFrDataTable(),
         "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]]
     });
+
+    $('input').focus(function(){ $(this).toggleClass('border-focus'); }).blur(function(){ $(this).toggleClass('border-focus'); });
 });
 
 function translationFrDataTable(){

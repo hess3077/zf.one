@@ -1,5 +1,6 @@
 {nocache}
 {if !in_array(substr($this->url(), 1, strrpos($this->url(), '/')), array('webservices', 'webservices/')) && !in_array($this->url(), array('/webservices'))}
+    {assign var='page' value="{str_replace(array('/'), array(''), $this->url())}"}
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -9,8 +10,8 @@
         <link rel="stylesheet" type="text/css" href="medias/js/DataTables/media/css/dataTables.semanticui.min.css">
         <link rel="stylesheet" type="text/css" href="medias/css/theme.css" />
         <!-- On inclus le CSS du Contôleur courant -->
-        {if !empty( str_replace(array('/'), array(''), $this->url()) )}
-            {$this->headLink()->appendStylesheet("medias/css/screens/{$this->url()}.css")}
+        {if !empty( $page )}
+            {$this->headLink()->appendStylesheet("medias/css/screens/{$page}.css")}
         {/if}
         <!-- Librairies utiles -->
         <script src="//code.jquery.com/jquery-1.12.4.js"></script>
@@ -19,7 +20,7 @@
         <script src="medias/css/Semantic-UI/semantic.min.js"></script>
         <script src="medias/js/default.js"></script>
     </head>
-    
+
     <body>
         <!-- Déclaration des variables utiles -->
         {assign var='container_dir' value="{APPLICATION_PATH}/layouts/templates/container/"}

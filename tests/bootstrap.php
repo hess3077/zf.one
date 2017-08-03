@@ -14,5 +14,12 @@ set_include_path(implode(PATH_SEPARATOR, array(
     get_include_path(),
 )));
 
+
+/** SMARTY */
+require_once ('../library/Smarty-3.1.30/Smarty.class.php');
+
+/** AutoLoad */
+require_once ('../library/auto_load.php');
+
 require_once 'Zend/Loader/Autoloader.php';
 Zend_Loader_Autoloader::getInstance();

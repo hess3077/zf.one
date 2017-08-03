@@ -1,0 +1,56 @@
+.cls-overflow-hidden {
+  overflow: hidden;
+}
+.body {
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif !important;
+  font-size: 12px !important;
+}
+#page {
+  width: 40%;
+  margin: auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  margin-top: 5% !important;
+}
+#page #auth {
+  width: 95%;
+  margin: auto;
+}
+#page #auth .describe {
+  text-align: left;
+  margin-bottom: 30px;
+}
+#page #auth .login .ui.input {
+  margin: 0 0 20px 0;
+  display: block;
+}
+#page #auth .login .ui.input input {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(34,36,38,0.15);
+}
+#page #auth .login .ui.input .user.icon,
+#page #auth .login .ui.input .lock.icon {
+  height: auto;
+  top: 17px;
+  margin: 0;
+}
+#page #auth .login .ui.input ul.errors {
+  color: #d50000;
+}
+#page #auth .login .ui.input ul.errors li {
+  list-style: none;
+  text-align: left;
+}
+#page #auth .login .clearfix label {
+  display: block;
+  text-align: left;
+  margin-bottom: 15px;
+}
+#page #auth .login .clearfix label.label_input {
+  display: none;
+}
+#page #auth .ui.large.form {
+  font-size: 13px !important;
+}
